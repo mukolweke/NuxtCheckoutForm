@@ -20,7 +20,7 @@
       />
     </div>
 
-    <div class="flex items-center justify-between space-x-2">
+    <div class="grid grid-cols-2 gap-4 space-x-2">
       <div>
         <label
           for="expirationdate"
