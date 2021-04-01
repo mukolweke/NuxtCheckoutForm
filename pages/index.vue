@@ -16,8 +16,7 @@
           <p class="text-xl font-semibold text-gray-700 tracking-tight">Order Summary</p>
 
           <div class="mt-7">
-            <order />
-            <order />
+            <order v-for="order in selectedOrders" :key="order.id" :order="order" />
           </div>
         </div>
 
@@ -46,6 +45,12 @@ import Totals from "../components/Totals.vue";
 
 export default {
   components: { CreditCard, PaymentForm, Order, Coupon, Totals },
+
+  computed: {
+    selectedOrders() {
+      return this.$store.state.orders.orders;
+    },
+  },
 
   head() {
     return {
