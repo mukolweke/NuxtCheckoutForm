@@ -1,27 +1,28 @@
 # CheckoutForm
+[![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
+[![nuxtjs](https://img.shields.io/badge/vue-nuxt-success)](https://img.shields.io/badge/vue-nuxt-success)
+<a href="https://www.npmjs.com/package/nuxt"><img src="https://badgen.net/npm/license/nuxt" alt="License"></a>
 
-## Build Setup
+A simple checkout payment confirmation component.
+
+## Getting Started
 
 ```bash
+# git clone repo
+git clone https://github.com/mukolweke/NuxtCheckoutForm.git
+
+# enter the project folder
+cd NuxtCheckoutForm
+
 # install dependencies
 $ npm install
 
 # serve with hot reload at localhost:3000
 $ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## :copyright: License
 
-
-<!-- # https://www.youtube.com/watch?v=FPCfPMpVYgc -->
-
-<!-- https://nosir.github.io/cleave.js/ -->
+[MIT](http://opensource.org/licenses/MIT)
 
 https://github.com/wuori/vue-credit-card-validation
