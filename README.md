@@ -24,5 +24,3 @@ $ npm run dev
 ## :copyright: License
 
 [MIT](http://opensource.org/licenses/MIT)
-
-https://github.com/wuori/vue-credit-card-validation
