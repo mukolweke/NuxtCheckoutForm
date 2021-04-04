@@ -10,7 +10,9 @@
     "test": "jest"
   },
   "dependencies": {
+    "cleave.js": "^1.6.0",
     "core-js": "^3.9.1",
+    "debounce": "^1.2.1",
     "nuxt": "^2.15.3"
   },
   "devDependencies": {

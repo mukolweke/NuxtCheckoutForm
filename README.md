@@ -21,3 +21,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 
 <!-- # https://www.youtube.com/watch?v=FPCfPMpVYgc -->
+
+<!-- https://nosir.github.io/cleave.js/ -->
+
+https://github.com/wuori/vue-credit-card-validation

@@ -11,7 +11,8 @@ export const state = () => ({
       quantity: 1,
       price: '4.52'
     }
-  ]
+  ],
+  totals: 0
 })
 
 
