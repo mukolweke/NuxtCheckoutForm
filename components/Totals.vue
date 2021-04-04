@@ -67,6 +67,18 @@ export default {
       return this.$store.state.coupon.discountCode;
     },
   },
+
+  watch: {
+    totals: {
+      handler: function (changedValue) {
+        this.$store.commit("orders/updateOrderTotals", changedValue);
+      },
+    },
+  },
+
+  created() {
+    this.$store.commit("orders/updateOrderTotals", this.totals);
+  },
 };
 </script>
 

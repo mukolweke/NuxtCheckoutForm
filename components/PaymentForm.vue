@@ -53,12 +53,12 @@
     </div>
 
     <div class="clearfix"></div>
-    
+
     <div>
       <button
         class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         type="button"
-      >Pay $20.52</button>
+      >Pay ${{orderTotal}}</button>
     </div>
   </div>
 </template>
@@ -90,7 +90,6 @@ export default {
           index % 2 === digits.length % 2 ? this.fixDouble(digit * 2) : digits
         )
         .reduce((acc, digit) => (acc += digit), 0);
-      console.log(sum % 10 === 0, n);
       this.invalidCard = sum % 10 == 0;
     }, 500),
   },
@@ -103,6 +102,9 @@ export default {
       set(value) {
         this.$store.commit("payment/updateCardInfo", value);
       },
+    },
+    orderTotal() {
+      return this.$store.state.orders.orderTotal;
     },
   },
 

@@ -12,7 +12,7 @@ export const state = () => ({
       price: '4.52'
     }
   ],
-  totals: 0
+  orderTotal: 0
 })
 
 
@@ -28,5 +28,8 @@ export const mutations = {
   },
   removeOrder(state, orderId) {
     state.orders = state.orders.filter(item => item.id !== orderId)
+  },
+  updateOrderTotals(state, amount) {
+    state.orderTotal = amount;
   }
 }
